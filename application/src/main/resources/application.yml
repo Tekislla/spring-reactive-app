@@ -1,0 +1,13 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /reactive
+ 
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/reactive
+    username: postgres
+    password: postgres
+logging:
+  level:
+    org.springframework.data.r2dbc: Debug
